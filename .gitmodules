@@ -1,0 +1,6 @@
+[submodule "ref/WpfControlLibrary"]
+	path = ref/WpfControlLibrary
+	url = https://github.com/linyupin/WpfControlLibrary.git
+[submodule "ref/CommonCSharpLibrary"]
+	path = ref/CommonCSharpLibrary
+	url = https://github.com/linyupin/CommonCSharpLibrary.git

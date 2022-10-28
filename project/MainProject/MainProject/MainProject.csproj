@@ -104,6 +104,16 @@
     <Folder Include="Model\" />
     <Folder Include="Resource\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ref\CommonCSharpLibrary\CommonCSharpLibrary\CommonCSharpLibrary\CommonCSharpLibrary.csproj">
+      <Project>{eeab4ebe-39a0-41da-957e-a955a4855c48}</Project>
+      <Name>CommonCSharpLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\ref\WpfControlLibrary\WpfControlLibrary\WpfControlLibrary\WpfControlLibrary.csproj">
+      <Project>{6c4d0365-be01-4bc8-b55d-1a58f9312902}</Project>
+      <Name>WpfControlLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
