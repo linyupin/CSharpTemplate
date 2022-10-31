@@ -4,9 +4,27 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MainProject"
+        xmlns:infoWin="clr-namespace:WpfControlLibrary.Information;assembly=WpfControlLibrary"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Style="{StaticResource WindowStyle1}"
+        Height="350" Width="525"
+        WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <!--選單-->
+        <Menu DockPanel.Dock="Top" Style="{StaticResource MenuStyleNormal}">
+            <MenuItem Header="File">
+                
+            </MenuItem>
+            <MenuItem Header="Device">
+
+            </MenuItem>
+        </Menu>
+        <!--訊息、狀態列-->
+        <infoWin:InformationBar DockPanel.Dock="Bottom" DataContext="{Binding InfoWinVM}" />
+        <!-- 主體 -->
+        <DockPanel >
+            
+        </DockPanel>
+
+    </DockPanel>
 </Window>

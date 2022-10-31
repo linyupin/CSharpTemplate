@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
+using WpfControlLibrary.Information;
 
 namespace MainProject.ViewModel {
-    public class MainWindowVM {
+    public class MainWindowVM : ViewModelBase {
         public MainWindowVM() {
-
+            initInfoWinVM();
         }
 
         // **** Init Function ****
         #region
+        
         #endregion
 
         // **** Private Parameter ****
@@ -38,6 +41,19 @@ namespace MainProject.ViewModel {
         #region
         #endregion
 
+        // **** Information Window ****
+        #region
+        InformationWindowVM _InfoWinVM;
+        public InformationWindowVM InfoWinVM {
+            get { return _InfoWinVM; }
+            set { _InfoWinVM = value; OnPropertyChanged(() => InfoWinVM); }
+        }
 
+        void initInfoWinVM() {
+            InfoWinVM = new InformationWindowVM();
+            InfoWinVM.CurrentInforItem.Content = "Init";
+            InfoWinVM.CurrentInforItem.FontColor = Brushes.Black;
+        }
+        #endregion
     }
 }

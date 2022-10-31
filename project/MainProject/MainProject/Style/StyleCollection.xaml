@@ -14,7 +14,7 @@
     </Style>
 	
 	<!-- Target:Menu -->
-	<Style x:Key="MenuStyleNormal" TargetType="Menu">
+    <Style x:Key="MenuStyleNormal" TargetType="Menu">
         <Setter Property="FontFamily" Value="Consolas" />
         <Setter Property="FontSize" Value="18" />
         <Setter Property="Background">
@@ -63,9 +63,15 @@
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
     </Style>
+
+    <Style x:Key="DataGridTextBox" TargetType="TextBox">
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="IsReadOnly" Value="True" />
+        <Setter Property="Foreground" Value="{Binding FontColor}" />
+    </Style>
 	
 	<!-- Target:Label -->
-	<Style x:Key="LabelStyleNormal" TargetType="Label" >
+    <Style x:Key="LabelStyleNormal" TargetType="Label" >
         <Setter Property="VerticalContentAlignment" Value="Center" />
     </Style>
 	
@@ -124,12 +130,12 @@
     </Style>
 
 	<!-- Target:ComboBox -->
-	<Style x:Key="ComboBoxStyleNormal" TargetType="ComboBox">
+    <Style x:Key="ComboBoxStyleNormal" TargetType="ComboBox">
         <Setter Property="VerticalContentAlignment" Value="Center" />
     </Style>
 
 	<!-- Target:CheckBox -->
-	<Style x:Key="CheckBoxStyleNormal" TargetType="CheckBox">
+    <Style x:Key="CheckBoxStyleNormal" TargetType="CheckBox">
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="LayoutTransform">
             <Setter.Value>
@@ -199,4 +205,5 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
 </ResourceDictionary>
