@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 using WpfControlLibrary.Information;
+using WpfControlLibrary.Resource;
 
 namespace MainProject.ViewModel {
     public class MainWindowVM : ViewModelBase {
@@ -14,7 +15,7 @@ namespace MainProject.ViewModel {
 
         // **** Init Function ****
         #region
-        
+
         #endregion
 
         // **** Private Parameter ****
